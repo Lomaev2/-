@@ -1,7 +1,17 @@
 import datetime
-x=int(input("Первое значение: "))
+a=str(input("Первое значение: "))
 z=str(input("Оператор: "))
-y=int(input("Второе значение значение: "))
+g=str(input("Второе значение значение: "))
+x=None
+y=None
+if a.find('.') != -1:
+    x=float(a)
+elif a.isdigit():
+    x=int(a)
+if g.find('.') != -1:
+    y=float(g)
+elif g.isdigit():
+    y=int(g)
 if z=='+':
     result=x+y
 elif z=='-':
